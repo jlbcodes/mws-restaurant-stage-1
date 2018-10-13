@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,13 +32,13 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container" role="application">
-      <div id="map"></div>
+    <section id="map-container" role="application" aria-label="Mapbox Maps">
+      <div id="map" arialabelledby="map-container"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <div class="flex-div">
-    <section aria-label="restaurant-name" id="restaurant-container">
+    <section aria-label="Restaurant Information" id="restaurant-container" role="contentinfo">
       <h1 id="restaurant-name"></h1>
       <img alt="restaurant image" id="restaurant-img">
       <p id="restaurant-cuisine"></p>
@@ -47,7 +47,7 @@
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section aria-label="reviews" id="reviews-container">
+    <section aria-label="Restaurant Reviews" id="reviews-container" role="contentinfo">
       <ul id="reviews-list"></ul>
     </section>
     </div>
@@ -66,6 +66,7 @@
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <script src="js/register-sw.js"></script>
   <!-- Google Maps -->
  <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
   <!-- End scripts -->
