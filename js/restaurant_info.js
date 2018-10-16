@@ -1,3 +1,4 @@
+// help from the following sources: Alexandro Perez, Ryan Waite, Matthew Cranford, Doug Brown
 let restaurant;
 var newMap;
 

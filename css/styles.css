@@ -1,3 +1,4 @@
+/* help from the following sources: Alexandro Perez, Ryan Waite, Matthew Cranford, Doug Brown */
 @charset "utf-8";
 /* CSS Document */
 
@@ -17,7 +18,6 @@ ul, li {
 	color: #333;
 	text-align: center;
 }
-
 a {
 	color: #c9d5de;
 	text-decoration: none;
@@ -82,25 +82,21 @@ nav h1 a {
     margin: 0;
     /* width: 100%; */
 }
-
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
-
 /* Add a color to all links inside the list */
 #breadcrumb li a {
     color: #800020;
     text-decoration: none;
 }
-
 /* Add a color on mouse-over */
 #breadcrumb li a:hover, #breadcrumb li a:focus {
     color: #333;
@@ -218,7 +214,6 @@ width: 100%;
   width: 100%;
   z-index: 1000;
 }
-
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 400px;
@@ -311,7 +306,6 @@ width: 100%;
 #restaurant-hours td {
   color: #666;
 }
-
 @media screen and (max-width: 320px) {
 	nav h1 a {
 		font-size: 15px;
@@ -322,14 +316,12 @@ width: 100%;
 		font-size: 20px;
 	}
 }
-
 @media screen and (max-width: 579px) {
 	.filter-options {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 }
-
 @media screen and (min-width: 768px) {
 	#restaurant-container, #reviews-container {
 		width: 50%;
@@ -339,18 +331,4 @@ width: 100%;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-}
-
-/* skip link ---------------------------------------------*/
-
-.skip-link {
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: -1000px;
-    background-color: white;
-    padding: 5px 10px;
-}
-.skip-link:focus {
-    left: 15px;
 }
